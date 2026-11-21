@@ -1,62 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Login screen: shown first -->
     <div id="login-screen" class="page">
-        <h1>Sign in</h1>
-        <form id="login-form" class="outer-cover login-card" autocomplete="off">
-            <label for="username">Username</label>
-            <input id="username" type="text" inputmode="numeric" required>
+      <h1>Sign in</h1>
+      <form id="login-form" class="outer-cover login-card" autocomplete="off">
+        <label for="username">Username</label>
+        <input id="username" type="text" inputmode="numeric" required />
 
-            <label for="password">Password</label>
-            <input id="password" type="password" inputmode="numeric" required>
+        <label for="password">Password</label>
+        <input id="password" type="password" inputmode="numeric" required />
 
-            <p id="login-error" class="login-error" role="alert"></p>
-            <button type="submit" id="login-btn">Sign in</button>
-        </form>
+        <p id="login-error" class="login-error" role="alert"></p>
+        <button type="submit" id="login-btn">Sign in</button>
+      </form>
     </div>
 
-    <!-- Calculator: hidden until login succeeds -->
+    <!-- Calculator: hidden until login succeeds -->>
     <div id="calculator" class="page" hidden>
-        <h1>Calculator</h1>
-        <div class="outer-cover">
-            <div class="display">
-                <div id="history" class="history"></div>
-                <div id="screen" class="screen">0</div>
-            </div>
-            <div class="digits">
-                <table>
-                    <tr>
-                    <td><button id="DEL" class="top-btn">DEL</button></td>
-                    <td><button id="AC" class="top-btn">AC</button></td>
-                    <td><button id="%" class="top-btn">%</button></td>
-                    <td><button id="/" class="side-btn">÷</button></td></tr><tr>
-                    <td><button id="7">7</button></td>
-                    <td><button id="8">8</button></td>
-                    <td><button id="9">9</button></td>
-                    <td><button id="*" class="side-btn">×</button></td></tr><tr>
-                    <td><button id="4">4</button></td>
-                    <td><button id="5">5</button></td>
-                    <td><button id="6">6</button></td>
-                    <td><button id="-" class="side-btn">−</button></td></tr><tr>
-                    <td><button id="1">1</button></td>
-                    <td><button id="2">2</button></td>
-                    <td><button id="3">3</button></td>
-                    <td><button id="+" class="side-btn">+</button></td></tr><tr>
-                    <td><button id="ABS">+/-</button></td>
-                    <td><button id="0">0</button></td>
-                    <td><button id=".">.</button></td>
-                    <td><button id="=" class="side-btn">=</button></td></tr>
-                </table>
-            </div>
+      <h1>Calculator</h1>
+      <div class="outer-cover">
+        <div class="display">
+          <div id="history" class="history"></div>
+          <div id="screen" class="screen">0</div>
         </div>
+        <div class="digits">
+          <table>
+            <tr>
+              <td><button id="DEL" class="top-btn">DEL</button></td>
+              <td><button id="AC" class="top-btn">AC</button></td>
+              <td><button id="%" class="top-btn">%</button></td>
+              <td><button id="/" class="side-btn">÷</button></td>
+            </tr>
+            <tr>
+              <td><button id="7">7</button></td>
+              <td><button id="8">8</button></td>
+              <td><button id="9">9</button></td>
+              <td><button id="*" class="side-btn">×</button></td>
+            </tr>
+            <tr>
+              <td><button id="4">4</button></td>
+              <td><button id="5">5</button></td>
+              <td><button id="6">6</button></td>
+              <td><button id="-" class="side-btn">−</button></td>
+            </tr>
+            <tr>
+              <td><button id="1">1</button></td>
+              <td><button id="2">2</button></td>
+              <td><button id="3">3</button></td>
+              <td><button id="+" class="side-btn">+</button></td>
+            </tr>
+            <tr>
+              <td><button id="ABS">+/-</button></td>
+              <td><button id="0">0</button></td>
+              <td><button id=".">.</button></td>
+              <td><button id="=" class="side-btn">=</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
+    <footer>
+      <div class="footer-content">
+        <span>Project By: Arnav Napit,Nirvik Khadka,Yuwan Gaisi & Nischal Neupane</span>
+      </div>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

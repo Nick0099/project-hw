@@ -9,34 +9,14 @@ body {
     -apple-system, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif;
   color: white;
-  background: linear-gradient(135deg, #141e3a, #3a1c5a);
-  overflow-x: hidden;
+  background: url("download.jpg");
+  background-size: repeat;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
 }
-
-/* colourful blobs behind the glass so the blur has something to show */
-body::before,
-body::after {
-  content: "";
-  position: fixed;
-  border-radius: 50%;
-  filter: blur(60px);
-  z-index: -1;
-}
-body::before {
-  width: 340px;
-  height: 340px;
-  top: 8%;
-  left: 12%;
-  background: #ff5e62;
-  opacity: 0.8;
-}
-body::after {
-  width: 380px;
-  height: 380px;
-  bottom: 5%;
-  right: 10%;
-  background: #2bb6ff;
-  opacity: 0.8;
+body::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
 }
 
 h1 {
@@ -204,4 +184,19 @@ button:active {
   80% {
     transform: translateX(8px);
   }
+}
+footer {
+  display: flex;
+  background: rgba(65, 64, 64, 0.9);
+  color: rgb(207, 206, 206);
+  padding: 14px 1%;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 10px;
 }
